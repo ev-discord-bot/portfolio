@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Iminthebibleson's Portfolio</title>
+      <link rel="shorcut icon" href="images/iminthebibleson.webp">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link href="css/styles.css" rel="stylesheet">
+      <link href="css/index.css" rel="stylesheet">
+   </head>
+   <body class="bg-base-100 text-neutral-content" data-theme="dark">
+      <!-- Header with Progress Bar -->
+      <div class="header">
+         <div class="progress-container">
+            <div class="progress-bar rounded-b-lg" id="myBar"></div>
+         </div>
+      </div>
+      <!-- Navbar -->
+      <nav class="bg-base-300 p-4 shadow-lg">
+         <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-extrabold">
+               <span class="bg-clip-text text-transparent bg-gradient-to-b from-primary to-info">
+               Iminthebibleson's Portfolio
+               </span>
+            </div>
+            <div class="flex items-center space-x-4">
+               <ul class="menu menu-vertical lg:menu-horizontal bg-base-200 rounded-box gap-2">
+                  <li><a href="#about" class="btn btn-secondary hover:-translate-y-1 hover:scale-110 duration-300">About Me</a></li>
+                  <li><a href="#projects" class="btn btn-secondary hover:-translate-y-1 hover:scale-110 duration-300">Projects</a></li>
+                  <li><a href="#contact" class="btn btn-secondary hover:-translate-y-1 hover:scale-110 duration-300">Contact</a></li>
+               </ul>
+               <!-- Theme Toggle -->
+               <label class="swap swap-rotate hover:-translate-y-1 hover:scale-110 duration-300">
+                  <!-- This hidden checkbox controls the state -->
+                  <input type="checkbox" id="theme-toggle" />
+                  <!-- Sun icon -->
+                  <svg
+                     class="swap-off h-10 w-10 fill-current"
+                     xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 24 24">
+                     <path
+                        d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
+                  </svg>
+                  <!-- Moon icon -->
+                  <svg
+                     class="swap-on h-10 w-10 fill-current"
+                     xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 24 24">
+                     <path
+                        d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
+                  </svg>
+               </label>
+            </div>
+         </div>
+      </nav>
+      <!-- Hero Section -->
+      <section class="relative h-screen flex items-center justify-center text-center text-neutral-content">
+         <img id="background-image" src="images/background.png" alt="Background" class="absolute blur-lg inset-0 w-full h-full object-cover z-0">
+         <div class="relative z-10">
+            <h1 class="text-5xl font-bold mb-4 text-color-main">Welcome to My Portfolio</h1>
+            <p class="text-xl mb-8 text-color-main">I am a passionate developer who loves to create amazing web experiences.</p>
+            <a href="#contact" class="btn btn-accent hover:-translate-y-1 hover:scale-110 duration-300">Get in Touch</a>
+            <div class="divider text-color-main"><i class="fa-solid fa-arrow-down fa-bounce text-color-main"></i></div>
+         </div>
+      </section>
+      <!-- About Me Section -->
+      <section id="about" class="py-16">
+         <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">About Me</h2>
+            <p class="text-lg mb-8">I am an upcoming Discord bot/website developer. I have a great passion for coding and developing things that can be useful to the public in any community.</p>
+            <img src="images/iminthebibleson.webp" alt="Profile Photo" class="w-32 h-32 rounded-full mx-auto mb-4 hover:-rotate-[-30deg] hover:scale-110 duration-300">
+            <p class="text-lg">I am mostly familiar with <i class="fa-brands fa-python"></i> Python, <i class="fa-brands fa-html5"></i> html, <i class="fa-brands fa-css3"></i> css, and <i class="fa-brands fa-square-js"></i> js.</p>
+            <div class="divider"><i class="fa-solid fa-arrow-down fa-bounce"></i></div>
+         </div>
+      </section>
+      <!-- Projects Section -->
+      <section id="projects" class="bg-base-200 py-16">
+         <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+               <div class="card bg-base-100 shadow-lg">
+                  <div class="card-body">
+                     <h3 class="text-xl font-bold mb-">The<span class="bg-clip-text text-transparent bg-gradient-to-br from-red-600 to-black"> Ev Bot</span></h3>
+                     <div class="indicator mx-auto hover:-rotate-[-30deg] hover:scale-110 duration-300">
+                        <span class="indicator-item badge badge-primary">Currently Offline</span>
+                        <div class="avatar">
+                           <div class="w-24 ">
+                              <img src="images/evbot.webp" />
+                           </div>
+                        </div>
+                     </div>
+                     <p class="mb-4">
+                        The Ev Bot was the first ever discord bot I have made.
+                     </p>
+                     <button class="btn btn-accent hover:-translate-y-1 hover:scale-110 duration-300" onclick="my_modal_1.showModal()">View Project Info</button>
+                     <dialog id="my_modal_1" class="modal">
+                        <div class="modal-box w-11/12 max-w-5xl h-11/12 max-h-5xl">
+                           <h3 class="text-lg font-bold">The genesis of my first discord bot.</h3>
+                           <p class="py-4">The Ev Bot was the first ever discord bot I have made related to an FPS Browser Shooter game,
+                              <img src="images/evio.png" class="inline h-4 align-middle"> <a class="link link-primary link-hover" href="https://ev.io" target="_blank">ev.io</a>. which taught me a lot about Python programming and Discord bot development. And helped me improve my code for more efficient and simpler code.
+                           </p>
+                        </div>
+                        <form method="dialog" class="modal-backdrop hover:-translate-y-1 hover:scale-110 duration-300">
+                           <button>close</button>
+                        </form>
+                     </dialog>
+                  </div>
+               </div>
+               <div class="card bg-base-100 shadow-lg">
+                  <div class="card-body">
+                     <h3 class="text-xl font-bold mb-">The<span class="bg-clip-text text-transparent bg-gradient-to-br from-red-600 to-black"> Ev.io User Info</span></h3>
+                     <div class="indicator mx-auto hover:-rotate-[-30deg] hover:scale-110 duration-300">
+                        <span class="indicator-item badge badge-primary">Currently Online</span>
+                        <div class="avatar">
+                           <div class="w-24 ">
+                              <img src="images/version1_logo_icon.png" />
+                           </div>
+                        </div>
+                     </div>
+                     <p class="mb-4">My First <em>(ish)</em> website that is meant for looking up ev.io players in game status.</p>
+                     <button class="btn btn-accent hover:-translate-y-1 hover:scale-110 duration-300" onclick="my_modal_2.showModal()">View Project Info</button>
+                     <dialog id="my_modal_2" class="modal">
+                        <div class="modal-box w-11/12 max-w-5xl h-11/12 max-h-5xl">
+                           <h3 class="text-lg font-bold">The Big Bang of the first verison of the ev.io user info website.</h3>
+                           <p class="py-4">One day I was thinking how come ev.io never exactly had a page that, when you type in a username, it would display there in game stats, etc. with just a click away and fast. So I was looking around at Codepen to find a template for a nice website format and functionality. So I have coded out the functions, remade the looks a bit, and then published.</p>
+                           <ul class="menu menu-vertical lg:menu-horizontal bg-base-200 rounded-box gap-2">
+                              <li><a href="https://evinfo.vercel.app" target="_blank" class="btn btn-secondary hover:-translate-y-1 hover:scale-110 duration-300">Link <i class="fa-solid fa-link"></i></a></li>
+                           </ul>
+                        </div>
+                        <form method="dialog" class="modal-backdrop">
+                           <button>close</button>
+                        </form>
+                     </dialog>
+                  </div>
+               </div>
+               <div class="card bg-base-100 shadow-lg">
+                  <div class="card-body">
+                     <h3 class="text-xl font-bold mb-">The<span class="bg-clip-text text-transparent bg-gradient-to-r from-[#24615a] from-50% to-[#db5e3d]"> Stock Price Game Bot</span></h3>
+                     <div class="indicator mx-auto hover:-rotate-[-30deg] hover:scale-110 duration-300">
+                        <span class="indicator-item badge badge-primary">Currently Offline</span>
+                        <div class="avatar">
+                           <div class="w-24 ">
+                              <img src="images/stockgamebot.webp" class="rounded-lg" />
+                           </div>
+                        </div>
+                     </div>
+                     <p class="mb-4">My second project about an discord bot.</p>
+                     <button class="btn btn-accent hover:-translate-y-1 hover:scale-110 duration-300" onclick="my_modal_3.showModal()">View Project Info</button>
+                     <dialog id="my_modal_3" class="modal">
+                        <div class="modal-box w-11/12 max-w-5xl h-11/12 max-h-5xl">
+                           <h3 class="text-lg font-bold">The Beginning of the stock price game bot.</h3>
+                           <p class="py-4">A school friend of mine was mentioning an online stock game that uses real-life market stocks and uses in-game money to learn about investing in stocks, which I thought was really cool, so I have tried my best to create a system like that and, at the same time, learn more about market stocks, but I had to discontinue the Discord bot due to not having a great way of fetching stock info.</p>
+                        </div>
+                        <form method="dialog" class="modal-backdrop">
+                           <button>close</button>
+                        </form>
+                     </dialog>
+                  </div>
+               </div>
+               <div class="card bg-base-100 shadow-lg">
+                  <div class="card-body">
+                     <h3 class="text-xl font-bold mb-">The<span class="bg-clip-text text-transparent bg-gradient-to-r from-[#270731] from-45% to-[#5c62b9]"> Ev Helper Bot</span></h3>
+                     <div class="indicator mx-auto hover:-rotate-[-30deg] hover:scale-110 duration-300">
+                        <span class="indicator-item badge badge-primary">Currently Online</span>
+                        <div class="avatar">
+                           <div class="w-24 ">
+                              <img src="images/evhelper.webp" class="rounded-lg" />
+                           </div>
+                        </div>
+                     </div>
+                     <p class="mb-4">My third biggest discord bot project related to ev.io.</p>
+                     <button class="btn btn-accent hover:-translate-y-1 hover:scale-110 duration-300" onclick="my_modal_4.showModal()">View Project Info</button>
+                     <dialog id="my_modal_4" class="modal">
+                        <div class="modal-box w-11/12 max-w-5xl h-11/12 max-h-5xl">
+                           <h3 class="text-lg font-bold">The story of the creation of the ev helper bot</h3>
+                           <p class="py-4">I thought it would be a good idea to receive an OG discord bot for clan managing and deploying players into the game with just an slash command, just like the original discord bot. <img src="images/evioclanhelper.webp" class="inline h-4 align-middle"> ev.io clan helper bot from another fellow developer that is now offline since for awhile, so I thought it would be a good idea to remake it and add my own features into it. </p>
+                        </div>
+                        <form method="dialog" class="modal-backdrop">
+                           <button>close</button>
+                        </form>
+                     </dialog>
+                  </div>
+               </div>
+               <div class="card bg-base-100 shadow-lg">
+                  <div class="card-body">
+                     <h3 class="text-xl font-bold mb-">The<span class="bg-clip-text text-transparent bg-gradient-to-br from-[#3c3c3c] from-45% to-[#000000]"> Ev.io User info (upgraded)</span></h3>
+                     <div class="indicator mx-auto hover:-rotate-[-30deg] hover:scale-110 duration-300">
+                        <span class="indicator-item badge badge-primary">Currently Online</span>
+                        <div class="avatar">
+                           <div class="w-24 ">
+                              <img src="images/verison2_logo_icon.png"/>
+                           </div>
+                        </div>
+                     </div>
+                     <p class="mb-4">The upgraded verison of the Ev.io User info website.</p>
+                     <button class="btn btn-accent hover:-translate-y-1 hover:scale-110 duration-300" onclick="my_modal_5.showModal()">View Project Info</button>
+                     <dialog id="my_modal_5" class="modal">
+                        <div class="modal-box w-11/12 max-w-5xl h-11/12 max-h-5xl">
+                           <h3 class="text-lg font-bold">The story of the creation of the ev helper bot</h3>
+                           <p class="py-4">this is an upgraded version of the <img src="images/version1_logo_icon.png" class="inline h-4 align-middle"> Ev.io User Info that is fully been remade and look more modern and nicer to see (in my option), it took weeks in order to polish and finalize the code and website using tailwind and daisyui to help style it.</p>
+                           <ul class="menu menu-vertical lg:menu-horizontal bg-base-200 rounded-box gap-2">
+                              <li><a href="https://ev-info-2-0.vercel.app" target="_blank" class="btn btn-secondary hover:-translate-y-1 hover:scale-110 duration-300">Link <i class="fa-solid fa-link"></i></a></li>
+                           </ul>
+                        </div>
+                        <form method="dialog" class="modal-backdrop">
+                           <button>close</button>
+                        </form>
+                     </dialog>
+                  </div>
+               </div>
+               <div class="card bg-base-100 shadow-lg">
+                  <div class="card-body">
+                     <h3 class="text-xl font-bold mb-">The<span class="bg-clip-text text-transparent bg-gradient-to-r from-[#221c5c] from-45% to-[#45228c]"> Skeleto Smp</span></h3>
+                     <div class="indicator mx-auto hover:-rotate-[-30deg] hover:scale-110 duration-300">
+                        <span class="indicator-item badge badge-primary">Currently Online</span>
+                        <div class="avatar rounded-sm">
+                           <div class="w-24 ">
+                              <img src="images/skeletosmp.gif" class="rounded-lg"/>
+                           </div>
+                        </div>
+                     </div>
+                     <p class="mb-4">Helping out an small mc server <i class="fa-solid fa-server"></i></p>
+                     <button class="btn btn-accent hover:-translate-y-1 hover:scale-110 duration-300" onclick="my_modal_6.showModal()">View Project Info</button>
+                     <dialog id="my_modal_6" class="modal">
+                        <div class="modal-box w-11/12 max-w-5xl h-11/12 max-h-5xl">
+                           <h3 class="text-lg font-bold">how i joined into the community and mc server</h3>
+                           <p class="py-4">I had a random DM from an owner of Skeletosmp that was inviting me into the server, and at that time I had recently bought MC, so I joined and met a great, fun community and still play to this day (this isn't really an ad in my option; it's really fun).</p>
+                           <ul class="menu menu-vertical lg:menu-horizontal bg-base-200 rounded-box gap-2">
+                              <li><a href="https://discord.gg/BY2dD5yYC4" target="_blank" class="btn btn-secondary hover:-translate-y-1 hover:scale-110 duration-300">Discord Server <i class="fa-brands fa-discord"></i></a></li>
+                              <li><a class="btn btn-secondary hover:-translate-y-1 hover:scale-110 duration-300">Ip: fun.skeletosmp.com</a></li>
+                           </ul>
+                        </div>
+                        <form method="dialog" class="modal-backdrop">
+                           <button>close</button>
+                        </form>
+                     </dialog>
+                  </div>
+               </div>
+            </div>
+            <div class="divider"><i class="fa-solid fa-arrow-down fa-bounce"></i></div>
+         </div>
+      </section>
+      <!-- Contact Section -->
+      <section id="contact" class="py-16">
+         <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Contact Me</h2>
+            <p class="text-lg mb-8">Feel free to reach out to me through any of the following platforms:</p>
+            <div class="flex justify-center gap-4">
+               <ul class="menu menu-vertical lg:menu-horizontal bg-base-200 rounded-box gap-2 mt-4">
+                  <li><a href="mailto:iminthebibleson21akame@gmail.com" class="btn btn-accent hover:-translate-y-1 hover:scale-110 duration-300">Email Me <i class="fa-solid fa-envelope"></i></a></li>
+                  <li><a href="https://github.com/iminthebibleson" target="_blank" class="btn btn-accent hover:-translate-y-1 hover:scale-110 duration-300">GitHub <i class="fa-brands fa-github"></i></a></li>
+               </ul>
+            </div>
+         </div>
+      </section>
+      <!-- Footer -->
+      <footer class="footer bg-neutral text-neutral-content items-center p-4">
+         <aside class="grid-flow-col items-center">
+            <svg
+               width="36"
+               height="36"
+               viewBox="0 0 24 24"
+               xmlns="http://www.w3.org/2000/svg"
+               fill-rule="evenodd"
+               clip-rule="evenodd"
+               class="fill-current">
+               <path
+                  d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path>
+            </svg>
+            <p>Copyright © <span id="current-year"></span> - All right reserved</p>
+         </aside>
+         <nav class="grid grid-flow-col gap-4 sm:place-self-center sm:justify-self-end">
+            <ul class="menu menu-vertical sm:menu-horizontal bg-base-200 rounded-box gap-2">
+               <li>
+                  <a href="https://discord.gg/qZUejZ2uGc" target="_blank" class="hover:-translate-y-1 hover:scale-110 duration-300">
+                  <i class="fa-brands fa-discord text-2xl"></i>
+                  </a>
+               </li>
+               <li>
+                  <a href="https://x.com/iminthebibleson" target="_blank" class="hover:-translate-y-1 hover:scale-110 duration-300">
+                  <i class="fa-brands fa-twitter text-2xl"></i>
+                  </a>
+               </li>
+            </ul>
+         </nav>
+      </footer>
+      <script src="js/index.js"></script>
+   </body>
+</html>
