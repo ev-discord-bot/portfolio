@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
       backgroundImage.src = 'images/light_background.png';
     } else {
       body.setAttribute('data-theme', 'dark');
-      backgroundImage.src = 'images/background.png';
+      backgroundImage.src = 'images/main_background.png';
     }
   });
 });
