@@ -2243,6 +2243,10 @@ html {
   width: 8rem;
 }
 
+.w-40 {
+  width: 10rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -2366,6 +2370,12 @@ html {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-\[\#3a322c\] {
+  --tw-gradient-from: #3a322c var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(58 50 44 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .from-\[\#3c3c3c\] {
   --tw-gradient-from: #3c3c3c var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(60 60 60 / 0) var(--tw-gradient-to-position);
@@ -2398,6 +2408,10 @@ html {
 
 .to-\[\#062f37\] {
   --tw-gradient-to: #062f37 var(--tw-gradient-to-position);
+}
+
+.to-\[\#090202\] {
+  --tw-gradient-to: #090202 var(--tw-gradient-to-position);
 }
 
 .to-\[\#45228c\] {
@@ -2489,11 +2503,6 @@ html {
   font-weight: 800;
 }
 
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
 .text-neutral-content {
   --tw-text-opacity: 1;
   color: var(--fallback-nc,oklch(var(--nc)/var(--tw-text-opacity)));
@@ -2583,6 +2592,11 @@ html {
 
 .hover\:-rotate-\[-30deg\]:hover {
   --tw-rotate: 30deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:-rotate-\[30deg\]:hover {
+  --tw-rotate: -30deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
