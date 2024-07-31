@@ -2342,6 +2342,12 @@ html {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
+.from-\[\#0a4b58\] {
+  --tw-gradient-from: #0a4b58 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(10 75 88 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .from-\[\#221c5c\] {
   --tw-gradient-from: #221c5c var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(34 28 92 / 0) var(--tw-gradient-to-position);
@@ -2388,6 +2394,10 @@ html {
 
 .to-\[\#000000\] {
   --tw-gradient-to: #000000 var(--tw-gradient-to-position);
+}
+
+.to-\[\#062f37\] {
+  --tw-gradient-to: #062f37 var(--tw-gradient-to-position);
 }
 
 .to-\[\#45228c\] {
@@ -2477,6 +2487,11 @@ html {
 
 .font-extrabold {
   font-weight: 800;
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-neutral-content {
